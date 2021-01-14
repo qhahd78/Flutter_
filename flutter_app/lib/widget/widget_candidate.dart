@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CandWidget extends StatefulWidget {
   // void callback 은 candWidget 을 사용하는
   // 부모 위젯에서 지정한 onTap을 전달해준다.
@@ -10,7 +10,7 @@ class CandWidget extends StatefulWidget {
   double width;
   bool answerState;
 
-  CandWidget({this.tap, this.index, this.text, this.answerState});
+  CandWidget({this.tap, this.index, this.text, this.answerState, width});
   _CandWidgetState createState() => _CandWidgetState();
 }
 
